@@ -1,0 +1,102 @@
+CREATE TABLE ShoppingCart (
+  id INTEGER PRIMARY KEY,
+  location TEXT NOT NULL,
+  department TEXT NOT NULL,
+  category TEXT NOT NULL,
+  subCategory TEXT NOT NULL
+);
+
+CREATE TABLE SKUDATA (
+  sku INTEGER PRIMARY KEY,
+  skuName TEXT NOT NULL,
+  location TEXT NOT NULL,
+  department TEXT NOT NULL,
+  category TEXT NOT NULL,
+  subCategory TEXT NOT NULL
+);
+create table user (id bigint not null auto_increment, password varchar(255),
+ username varchar(255), primary key (id)) ;
+
+insert into ShoppingCart values(1,'Perimeter','Bakery','Bakery Bread','Bagels');
+insert into ShoppingCart values(2,'Perimeter','Bakery','Bakery Bread','Baking or Breading Products');
+insert into ShoppingCart values(3,'Perimeter','Bakery','Bakery Bread','English Muffins or Biscuits');
+insert into ShoppingCart values(4,'Perimeter','Bakery','Bakery Bread','Flatbreads');
+insert into ShoppingCart values(5,'Perimeter','Bakery','In Store Bakery','Breakfast Cake or Sweet Roll');
+insert into ShoppingCart values(6,'Perimeter','Bakery','In Store Bakery','Cakes');
+insert into ShoppingCart values(7,'Perimeter','Bakery','In Store Bakery','Pies');
+insert into ShoppingCart values(8,'Perimeter','Bakery','In Store Bakery','Seasonal');
+insert into ShoppingCart values(9,'Center','Dairy','Cheese','Cheese Sauce');
+insert into ShoppingCart values(10,'Center','Dairy','Cheese','Specialty Cheese');
+insert into ShoppingCart values(11,'Center','Dairy','Cream or Creamer','Dairy Alternative Creamer');
+insert into ShoppingCart values(12,'Center','Dairy','Cream or Creamer','Whipping Creams');
+insert into ShoppingCart values(13,'Center','Dairy','Cultured','Cottage Cheese');
+insert into ShoppingCart values(14,'Center','Dairy','Refrigerated Baking','Refrigerated Breads');
+insert into ShoppingCart values(15,'Center','Dairy','Refrigerated Baking','Refrigerated English Muffins and Biscuits');
+insert into ShoppingCart values(16,'Center','Dairy','Refrigerated Baking','Refrigerated Hand Held Sweets');
+insert into ShoppingCart values(17,'Center','Dairy','Refrigerated Baking','Refrigerated Pie Crust');
+insert into ShoppingCart values(18,'Center','Dairy','Refrigerated Baking','Refrigerated Sweet Breakfast Baked Goods');
+insert into ShoppingCart values(19,'Perimeter','Deli and Foodservice','Self Service Deli Cold','Beverages');
+insert into ShoppingCart values(20,'Perimeter','Deli and Foodservice','Service Deli','Cheese All Other');
+insert into ShoppingCart values(21,'Perimeter','Deli and Foodservice','Service Deli','Cheese American');
+insert into ShoppingCart values(22,'Perimeter','Floral','Bouquets and Cut Flowers','Bouquets and Cut Flowers');
+insert into ShoppingCart values(23,'Perimeter','Floral','Gifts','Gifts');
+insert into ShoppingCart values(24,'Perimeter','Floral','Plants','Plants');
+insert into ShoppingCart values(25,'Center','Frozen','Frozen Bake','Bread or Dough Products Frozen');
+insert into ShoppingCart values(26,'Center','Frozen','Frozen Bake','Breakfast Cake or Sweet Roll Frozen');
+insert into ShoppingCart values(27,'Center','Frozen','Frozen Breakfast','Frozen Breakfast Entrees');
+insert into ShoppingCart values(28,'Center','Frozen','Frozen Breakfast','Frozen Breakfast Sandwich');
+insert into ShoppingCart values(29,'Center','Frozen','Frozen Breakfast','Frozen Egg Substitutes');
+insert into ShoppingCart values(30,'Center','Frozen','Frozen Breakfast','Frozen Syrup Carriers');
+insert into ShoppingCart values(31,'Center','Frozen','Frozen Desserts or Fruit and Toppings','Pies Frozen');
+insert into ShoppingCart values(32,'Center','Frozen','Frozen Juice','Frozen Apple Juice');
+insert into ShoppingCart values(33,'Center','Frozen','Frozen Juice','Frozen Fruit Drink Mixers');
+insert into ShoppingCart values(34,'Center','Frozen','Frozen Juice','Frozen Fruit Juice All Other');
+insert into ShoppingCart values(35,'Center','GM','Audio Video','Audio');
+insert into ShoppingCart values(36,'Center','GM','Audio Video','Video DVD');
+insert into ShoppingCart values(37,'Center','GM','Audio Video','Video VHS');
+insert into ShoppingCart values(38,'Center','GM','Housewares','Bedding');
+insert into ShoppingCart values(39,'Center','GM','Housewares','Candles');
+insert into ShoppingCart values(40,'Center','GM','Housewares','Collectibles and Gifts');
+insert into ShoppingCart values(41,'Center','GM','Housewares','Flashlights');
+insert into ShoppingCart values(42,'Center','GM','Housewares','Frames');
+insert into ShoppingCart values(43,'Center','GM','Insect and Rodent','Indoor Repellants or Traps');
+insert into ShoppingCart values(44,'Center','GM','Insect and Rodent','Outdoor Repellants or Traps');
+insert into ShoppingCart values(45,'Center','GM','Kitchen Accessories','Kitchen Accessories');
+insert into ShoppingCart values(46,'Center','GM','Laundry','Bleach Liquid');
+insert into ShoppingCart values(47,'Center','GM','Laundry','Bleach Powder');
+insert into ShoppingCart values(48,'Center','GM','Laundry','Fabric Softener Liquid');
+insert into ShoppingCart values(49,'Center','GM','Laundry','Fabric Softener Sheets');
+insert into ShoppingCart values(50,'Center','Grocery','Baking Ingredients','Dry or Canned Milk');
+insert into ShoppingCart values(51,'Center','Grocery','Baking Ingredients','Food Coloring');
+insert into ShoppingCart values(52,'Center','Grocery','Spices','Salt Cooking or Edible or Seasoned');
+insert into ShoppingCart values(53,'Center','Grocery','Spices','Salt Substitute');
+insert into ShoppingCart values(54,'Center','Grocery','Spices','Seasoning Dry');
+insert into ShoppingCart values(55,'Center','Grocery','Stuffing Products','Stuffing Products');
+insert into ShoppingCart values(56,'Perimeter','Seafood','Frozen Shellfish','Frozen Shellfish');
+insert into ShoppingCart values(57,'Perimeter','Seafood','Other Seafood','All Other Seafood');
+insert into ShoppingCart values(58,'Perimeter','Seafood','Other Seafood','Prepared Seafood Entrees');
+insert into ShoppingCart values(59,'Perimeter','Seafood','Other Seafood','Seafood Salads');
+insert into ShoppingCart values(60,'Perimeter','Seafood','Other Seafood','Smoked Fish');
+insert into ShoppingCart values(61,'Perimeter','Seafood','Other Seafood','Seafood Breading Sauces Dips');
+
+
+
+
+insert into SKUDATA values(1,'SKUDESC1','Permiter','Bakery','Bakery Bread','Bagels');
+insert into SKUDATA values(2,'SKUDESC2','Permiter','Deli and Foodservice','Self Service Deli Cold','Beverages');
+insert into SKUDATA values(3,'SKUDESC3','Permiter','Floral','Bouquets and Cut Flowers','Bouquets and Cut Flowers');
+insert into SKUDATA values(4,'SKUDESC4','Permiter','Deli and Foodservice','Service Deli','All Other');
+insert into SKUDATA values(5,'SKUDESC5','Center','Frozen','Frozen Bake','Bread or Dough Products Frozen');
+insert into SKUDATA values(6,'SKUDESC6','Center','Grocery','Crackers','Rice Cakes');
+insert into SKUDATA values(7,'SKUDESC7','Center','GM','Audio Video','Audio');
+insert into SKUDATA values(8,'SKUDESC8','Center','GM','Audio Video','Video DVD');
+insert into SKUDATA values(9,'SKUDESC9','Permiter','GM','Housewares','Beeding');
+insert into SKUDATA values(10,'SKUDESC10','Permiter','Seafood','Frozen Shellfish','Frozen Shellfish');
+insert into SKUDATA values(11,'SKUDESC11','Permiter','Seafood','Other Seafood','All Other Seafood');
+insert into SKUDATA values(12,'SKUDESC12','Permiter','Seafood','Other Seafood','Prepared Seafood Entrees');
+insert into SKUDATA values(13,'SKUDESC13','Permiter','Seafood','Other Seafood','Salads');
+insert into SKUDATA values(14,'SKUDESC14','Permiter','Bakery','Bakery Bread','Bagels');
+insert into SKUDATA values(15,'SKUDESC15','Permiter','Deli and Foodservice','Self Service Deli Cold','Beverages');
+insert into SKUDATA values(16,'SKUDESC16','Permiter','Floral','Bouquets and Cut Flowers','Bouquets and Cut Flowers');
+insert into SKUDATA values(17,'SKUDESC17','Permiter','Deli and Foodservice','Service Deli','All Other');
+insert into SKUDATA values(18,'SKUDESC18','Center','Frozen','Frozen Bake','Bread or Dough Products Frozen');
